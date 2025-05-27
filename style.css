@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Input com cantos arredondados e destaque no foco */
+input {
+  padding: 10px;
+  width: 200px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus {
+  border-color: rebeccapurple;
+  box-shadow: 0 0 3px rgba(114, 47, 161, 0.5);
+}
+
+/* Botões com cantos arredondados, fundo roxo e hover */
+button {
+  padding: 10px 15px;
+  margin-left: 5px;
+  border-radius: 8px;
+  background-color: rebeccapurple;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #7a1fa2;
+}
+
+/* Lista de tarefas centralizada e empilhada */
+#taskList {
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Itens da lista com largura limitada e centralizados */
+li {
+  padding: 10px;
+  background: #f0f0f0;
+  
+  width: 100%;
+  max-width: 400px;
+  margin: 10px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+
+/* Botão de remover dentro do LI também arredondado */
+li button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+/* Botões de ordenação inicialmente ocultos */
+#sortAlphabetical,
+#sortByInsertion {
+  display: none;
+}
+
+/* Container para alinhar horizontalmente os botões de ordenação */
+#sortButtons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+/* botão ativo ganha borda e sombra para se destacar */
+button.active {
+  box-shadow: 0 0 0 2px #fff inset, 0 0 4px rgba(0,0,0,0.3);
+  opacity: 0.9;                /* ligeiramente menos opaco */
+}

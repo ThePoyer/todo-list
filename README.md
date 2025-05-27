@@ -1,4 +1,4 @@
-# My To-Do List
+# Todo List App (An experiment in JavaScript by Veta!)
 
 App simples de To-Do List em HTML, CSS e JavaScript.
 (apenas para praticar JS)
